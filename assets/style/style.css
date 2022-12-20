@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  /* settare altezza*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 8%;
+  padding-top: 3%;
+  color: white;
+}
+
+h2 {
+  font-size: 22px;
+  color: #c2128d;
+  font-weight: bolder;
+  padding-bottom: 2%;
+}
+
+#logo {
+  height: 5vh;
+  padding-bottom: 5%;
+}
+
+#title {
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  width: 30%;
+  line-height: 0.8em;
+  padding-bottom: 3%;
+}
+
+#content {
+  font-family: "Inter", sans-serif;
+  width: 50%;
+  padding-bottom: 4%;
+  line-height: 1.2em;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+#list {
+  padding-left: 2%;
+  line-height: 1.5em;
+  padding-bottom: 5%;
+}
+
+/*Verificare check-box*/
+#check-box {
+  font-size: 12px;
+}
+
+#check-box input {
+  opacity: 50%;
+  border: 4px solid white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12%;
+}
+#proceed {
+  -webkit-box-shadow: 5px 0px 28px 1px #00ffff;
+  -moz-box-shadow: 5px 0px 28px 1px #00ffff;
+  -o-box-shadow: 5px 0px 28px 1px #00ffff;
+  box-shadow: 5px 0px 28px 1px #00ffff;
+}
+
+.button_proceed {
+  height: 40px;
+  font-size: 1em;
+  color: #0b113b;
+  font-weight: bold;
+  border: 1px;
+  padding: 10px 40px;
+  background-color: #00ffff;
+}
+
+/* CSS PAGINA 2 (Question Page)*/
+
+#answers {
+  height: 50px;
+  width: 200px;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.164);
+  border-radius: 30px;
+  padding: 10px 40px;
+  background-color: #ffffff22;
+  box-shadow: -1px -1px 0px 1px white;
+}
+
+.mainReg02 {
+  align-items: center;
+  text-align: center;
+}
+#Question_tabs {
+  width: 35vh;
+}
