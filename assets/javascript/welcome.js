@@ -8,8 +8,6 @@ button.addEventListener("clicked", function() {
 });
 
 function proceed() {
-    document.getElementById("button").innerHTML =
-        "<a href='../../question_page.html'here to visit example.com</a>";
-    alert("Hai cliccato");
+    button.setAttribute(onclick, "location.href='question_page.html");
 }
 /* aggiungere javascript della prima pagina */
