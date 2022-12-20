@@ -1,9 +1,3 @@
-/* aggiungere javascript della prima pagina */
-/*const proceed = () => {
-    document.getElementById("proceed").innerHTML =
-        "<a href='../../question_page.html'here to visit example.com</a>";
-    alert("Hai cliccato");
-};*/
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
@@ -242,8 +236,8 @@ window.onload = function() {
                 selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
             /* if (classToApply === "correct") {
-                                                                                                                                                                                                                      incrementScore(SCORE_POINTS);
-                                                                                                                                                                                                                  }*/
+                                                                                                                                                                                                                            incrementScore(SCORE_POINTS);
+                                                                                                                                                                                                                        }*/
 
             selectedChoice.parentElement.classList.add(classToApply);
 
@@ -286,18 +280,3 @@ window.onload = function() {
     <p class="hud-prefix">Score</p>
     <h1 class="hud-main-text" id="score">0</h1>
 </div> */ // ---> final score da aggiungere alla 3 pagina
-
-const checkbox = document.getElementById("checkbox");
-const button = document.getElementById("button");
-button.addEventListener("clicked", function() {
-    if (checkbox.checked == 1) {
-        //proceed();
-        alert("checkbox");
-    }
-});
-
-function proceed() {
-    document.getElementById("button").innerHTML =
-        "<a href='../../question_page.html'here to visit example.com</a>";
-    alert("Hai cliccato");
-}
