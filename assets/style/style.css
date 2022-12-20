@@ -268,16 +268,18 @@ header {
 
 
 /*CSS PAGINA 4 (Review Page)*/
+#conteiner.commit{
+    display: flex;
+}
 #comment{
     border-bottom:1px solid #d0408db3;
+    border-top: #ffffff01;
+    border-left: #ffffff01;
+    border-right: #ffffff01;
     width: 60%;
     color: #000000;
-    border-style: solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #ffffff01;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 50px;
    
 }
@@ -288,4 +290,8 @@ header {
 #title2{
     font-size: 40px ;
     padding-bottom: 20px;
+}
+#footer-review{
+display: flex;
+justify-content: center;
 }
