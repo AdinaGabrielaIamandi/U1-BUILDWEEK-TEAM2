@@ -75,7 +75,7 @@ h2 {
     box-shadow: 5px 0px 28px 1px #00ffff;
 }
 
-#button {
+.button_proceed {
     height: 40px;
     font-size: 1em;
     color: #0b113b;
@@ -83,10 +83,6 @@ h2 {
     border: 1px;
     padding: 10px 40px;
     background-color: #00ffff;
-}
-
-a {
-    text-decoration: none;
 }
 
 
@@ -174,4 +170,97 @@ header {
 
 #color-pink {
     color: #c2128d;
+}
+
+
+/******style.css/results*************/
+
+#resultsBody {
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 1em;
+    font-family: "Inter", sans-serif;
+}
+
+#imgResults {
+    width: 100%;
+    max-width: 12%;
+    padding-top: 2em;
+    padding-left: 7em;
+}
+
+#mainResults {
+    height: 55vh;
+    text-align: center;
+}
+
+#divHeader {
+    text-align: center;
+    margin: 2.5em;
+}
+
+#divHeader p {
+    font-size: 2em;
+}
+
+.h1 {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#footerResults {
+    text-align: center;
+}
+
+#mainResults h1 {
+    text-align: center;
+}
+
+#leftDiv {
+    display: inline-block;
+    width: 10em;
+    text-align: left;
+    padding-top: 9em;
+    padding-right: 10em;
+}
+
+.percentage1 {
+    font-weight: bold;
+}
+
+.percentage2 {
+    font-weight: bold;
+}
+
+#centralDiv {
+    display: inline-block;
+}
+
+#rightDiv {
+    display: inline-block;
+    padding-left: 10em;
+}
+
+.firstP {
+    font-size: 4.5em;
+}
+
+.secondP {
+    font-size: 1.5em;
+}
+
+#rightDiv {
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+}
+
+#anchorFooter {
+    border: 2px solid white;
+    color: white;
+    font-size: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    font-weight: bold;
 }
