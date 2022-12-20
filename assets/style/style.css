@@ -75,7 +75,7 @@ h2 {
     box-shadow: 5px 0px 28px 1px #00ffff;
 }
 
-.button_proceed {
+#button {
     height: 40px;
     font-size: 1em;
     color: #0b113b;
@@ -83,6 +83,10 @@ h2 {
     border: 1px;
     padding: 10px 40px;
     background-color: #00ffff;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -151,15 +155,9 @@ header {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    background: linear-gradient( 180deg, rgb(206, 6, 183) 0%, 35%, rgb(135, 2, 115) 100%);
     transform: scale(1.02);
     transform: transform 100ms;
-}
-
-#footer-quiz {
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: bold;
 }
 
 #progressText {
@@ -171,6 +169,7 @@ header {
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 14px;
+    padding-bottom: 4%;
 }
 
 #color-pink {
