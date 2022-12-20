@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     background-image: url(../img/bg.jpg);
     height: 100vh;
     /* settare altezza*/
@@ -20,7 +20,6 @@ h2 {
     height: 5vh;
     padding-bottom: 5%;
     padding-left: 8%;
-    padding-top: 3%;
 }
 
 #title {
@@ -33,7 +32,6 @@ h2 {
 }
 
 #content {
-    font-family: "Inter", sans-serif;
     width: 50%;
     padding-bottom: 4%;
     line-height: 1.2em;
@@ -62,7 +60,7 @@ h2 {
     border: 4px solid white;
 }
 
-footer {
+#footer-welcome {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,14 +105,43 @@ footer {
     text-align: center;
 }
 
-#Question_tabs {
-    width: 35vh;
+.choice-container {
+    height: 50px;
+    width: 200px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.164);
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: #ffffff22;
+    box-shadow: -1px -1px 0px 1px white;
+    width: 40vh;
 }
 
-#title2 {
-    padding-bottom: 3%;
+#question {
+    padding-bottom: 8%;
     font-family: "Outfit", sans-serif;
     font-size: 60px;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-right: 8%;
+}
+
+#answers-box {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 8%;
+}
+
+#footer-quiz {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
 }

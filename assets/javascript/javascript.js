@@ -108,3 +108,8 @@ window.onload = function() {
 // Se stai mostrando una domanda alla volta, aggiungi semplicemente un punto alla variabile del punteggio che hai precedentemente creato SE la risposta selezionata è === correct_answer
 
 // BUON LAVORO 💪🚀
+
+/*<div class="hud-item">
+    <p class="hud-prefix">Score</p>
+    <h1 class="hud-main-text" id="score">0</h1>
+</div> */ // ---> final score da aggiungere alla 3 pagina

@@ -14,28 +14,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <title>Welcome</title>
+    <title>Quiz</title>
 </head>
 
 <body>
     <header>
         <img id="logo" src="./assets/img/epicode_logo.png" />
-        <div id="Time">timer</div>
+        <div id="time">timer</div>
         <!--da capire come implementare il timer-->
     </header>
-    <main class="mainReg02">
-        <div id="title2" class="BigQuestion">
-            <h1>How can I create a <span class="bold">checkbox in HTML?</span></h1>
+    <div class="mainReg02">
+        <div id="Quiz" class="justify-center flex-column">
+            <h1 id="question">Answer of this question</h1>
+            <div id="answers-box">
+                <div class="choice-container">
+                    <p class="choice-text" data-number="1">Choice 1</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
         </div>
-
-        <div id="Question_tabs">
-            <button id="answers" class="one">risposta1</button>
-            <button id="answers" class="two">risposta2</button>
-            <button id="answers" class="three">risposta3</button>
-            <button id="answers" class="four">risposta4</button>
+    </div>
+    <footer id="footer-quiz">
+        <div class="hud-item">
+            <p id="progressText" class="hud-prefix">QUESTION</p>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
         </div>
-    </main>
-    <footer></footer>
+    </footer>
 </body>
 <script src="./assets/javascript/javascript.js"></script>
 
