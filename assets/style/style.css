@@ -20,6 +20,7 @@ h2 {
     height: 5vh;
     padding-bottom: 5%;
     padding-left: 8%;
+    padding-top: 3%;
 }
 
 #title {
@@ -113,8 +114,11 @@ input[type="checkbox"]:checked+label:before {
 #questionHeader {
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
     padding-right: 8%;
+}
+
+#time {
+    padding-top: 3%;
 }
 
 #quiz {
@@ -170,7 +174,7 @@ input[type="checkbox"]:checked+label:before {
     padding-bottom: 4%;
 }
 
-#color-pink {
+#pink {
     color: #c2128d;
 }
 
@@ -263,6 +267,10 @@ input[type="checkbox"]:checked+label:before {
 
 #conteiner.commit {
     display: flex;
+}
+
+.mainReg02 {
+    text-align: center;
 }
 
 #comment {
