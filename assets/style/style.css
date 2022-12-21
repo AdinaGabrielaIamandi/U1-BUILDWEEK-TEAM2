@@ -110,24 +110,35 @@ input[type="checkbox"]:checked+label:before {
 
 /* CSS PAGINA 2 (Question Page)*/
 
-#answers {
-    height: 50px;
-    width: 200px;
-    font-size: 1em;
-    color: white;
-    font-weight: bold;
-    border: 2px solid rgba(255, 255, 255, 0.164);
-    border-radius: 30px;
-    padding: 10px 40px;
-    background-color: #ffffff22;
-    box-shadow: -1px -1px 0px 1px white;
+#questionHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-right: 8%;
 }
 
-.mainReg02 {
+#quiz {
     text-align: center;
 }
 
-.choice-container {
+#question {
+    padding-bottom: 8%;
+    font-family: "Outfit", sans-serif;
+    font-size: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#choices-box {
+    padding-left: 2%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    width: 50%;
+    text-align: center;
+    padding-left: 25%;
+}
+
+.choice {
     height: 50px;
     width: 200px;
     font-size: 1em;
@@ -139,47 +150,16 @@ input[type="checkbox"]:checked+label:before {
     background-color: #ffffff22;
     box-shadow: -1px -1px 0px 1px white;
     width: 40vh;
+    margin-left: 5%;
+    vertical-align: baseline-middle;
+    margin-bottom: 2%;
 }
 
-#question {
-    padding-bottom: 8%;
-    font-family: "Outfit", sans-serif;
-    font-size: 60px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3%;
-    padding-right: 8%;
-}
-
-#answers-box {
-    padding-left: 2%;
-    padding-right: 4%;
-    padding-bottom: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-.choice-container {
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.choice-container:hover {
+.choice:hover {
     cursor: pointer;
     background: linear-gradient( 180deg, rgb(206, 6, 183) 0%, 35%, rgb(135, 2, 115) 100%);
     transform: scale(1.02);
     transform: transform 100ms;
-}
-
-#progressText {
-    margin-top: 100px;
 }
 
 #footer-quiz {
