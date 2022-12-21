@@ -51,15 +51,6 @@ h2 {
 
 /*Verificare check-box*/
 
-#check-box {
-    font-size: 12px;
-}
-
-#check-box input {
-    opacity: 50%;
-    border: 4px solid white;
-}
-
 #footer-welcome {
     display: flex;
     align-items: center;
@@ -298,11 +289,13 @@ header {
 
 
 /*CSS PAGINA 4 (Review Page)*/
-#conteiner.commit{
+
+#conteiner.commit {
     display: flex;
 }
-#comment{
-    border-bottom:1px solid #d0408db3;
+
+#comment {
+    border-bottom: 1px solid #d0408db3;
     border-top: #ffffff01;
     border-left: #ffffff01;
     border-right: #ffffff01;
@@ -322,7 +315,8 @@ header {
     font-size: 40px;
     padding-bottom: 20px;
 }
-#footer-review{
-display: flex;
-justify-content: center;
+
+#footer-review {
+    display: flex;
+    justify-content: center;
 }
