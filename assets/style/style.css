@@ -65,7 +65,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding-right: 12%;
-    padding-left: 8%;
+    padding-left: 6%;
 }
 
 #proceed {
@@ -73,6 +73,37 @@ h2 {
     -moz-box-shadow: 5px 0px 28px 1px #00ffff;
     -o-box-shadow: 5px 0px 28px 1px #00ffff;
     box-shadow: 5px 0px 28px 1px #00ffff;
+}
+
+label {
+    font-weight: bold;
+    padding-left: 2%;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    display: block;
+    margin: 0.2em;
+}
+
+input[type="checkbox"]+label:before {
+    content: "\2714";
+    border: 0.2em solid white;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    margin: 0.2em;
+    vertical-align: center;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked+label:before {
+    color: white;
 }
 
 #button {
@@ -266,7 +297,6 @@ header {
 }
 
 
-
 /*CSS PAGINA 4 (Review Page)*/
 #conteiner.commit{
     display: flex;
@@ -281,14 +311,15 @@ header {
     background-color: #ffffff01;
     margin-top: 20px;
     margin-bottom: 50px;
-   
 }
-.pReview{
- font-size: 22px;
- padding-bottom: 3px;
+
+.pReview {
+    font-size: 22px;
+    padding-bottom: 3px;
 }
-#title2{
-    font-size: 40px ;
+
+#title2 {
+    font-size: 40px;
     padding-bottom: 20px;
 }
 #footer-review{
