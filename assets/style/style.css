@@ -197,14 +197,6 @@ header {
 
 /******style.css/results*************/
 
-#resultsBody {
-    background-image: url(./bg.jpg);
-    background-size: cover;
-    color: white;
-    padding: 1em;
-    font-family: "Inter", sans-serif;
-}
-
 #imgResults {
     width: 100%;
     max-width: 12%;
@@ -215,11 +207,6 @@ header {
 #mainResults {
     height: 55vh;
     text-align: center;
-}
-
-#divHeader {
-    text-align: center;
-    margin: 2.5em;
 }
 
 #divHeader p {
@@ -278,11 +265,15 @@ header {
     text-align: right;
 }
 
+#footerResults {
+    padding-top: 5%;
+}
+
 #anchorFooter {
     border: 2px solid white;
     color: white;
     font-size: 2em;
-    padding: 0.5em 2em;
+    padding: 0.2em 2em;
     text-decoration: none;
     font-weight: bold;
 }

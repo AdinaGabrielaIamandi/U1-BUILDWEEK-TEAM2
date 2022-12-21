@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assetsResults/reset.css" />
-    <link rel="stylesheet" href="./assetsResults/Results03style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <title>Results-page</title>
-  </head>
-  <body id="resultsBody">
+</head>
+
+<body>
     <header>
-      <img
-        src="./assetsResults/epicode_logo.png"
-        alt="Logo-Epicode"
-        id="imgResults"
-      />
-      <div id="divHeader">
-        <h1 class="h1">Results</h1>
-        <p>The summary of answers:</p>
-      </div>
+        <img src="./assets/img/epicode_logo.png" alt="Logo-Epicode" id="logo" />
     </header>
     <!--MAIN-->
     <main id="mainResults">
-      <div id="leftDiv">
-        <p class="firstP">Correct <span class="percentage1"> 66.7%</span></p>
-        <p class="secondP">4/6 questions</p>
-      </div>
-      <div id="centralDiv">
-        <div class="graphic">IMPLEMENTAZIONE GRAFICO JS</div>
-      </div>
-      <div id="rightDiv">
-        <p class="firstP">Wrog <span class="percentage2"> 33.3%</span></p>
-        <p class="secondP">2/6 questions</p>
-      </div>
+        <div id="divHeader">
+            <h1 class="h1">Results</h1>
+            <p>The summary of answers:</p>
+        </div>
+        <div id="leftDiv">
+            <p class="firstP">Correct <span class="percentage1"> 66.7%</span></p>
+            <p class="secondP">4/6 questions</p>
+        </div>
+        <div id="centralDiv">
+            <div class="graphic">IMPLEMENTAZIONE GRAFICO JS</div>
+        </div>
+        <div id="rightDiv">
+            <p class="firstP">Wrong <span class="percentage2"> 33.3%</span></p>
+            <p class="secondP">2/6 questions</p>
+        </div>
     </main>
     <footer id="footerResults">
-      <a href="#" id="anchorFooter">RATE US</a>
+        <a href="review.html" id="anchorFooter">RATE US</a>
     </footer>
-  </body>
+</body>
+
 </html>
