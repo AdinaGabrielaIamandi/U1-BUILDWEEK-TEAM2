@@ -309,3 +309,11 @@ input[type="checkbox"]:checked + label:before {
 .star.selected {
   content: url("../img/star.svg");
 }
+
+
+/*CSS doughnut chart */
+#inside_canvas{
+  position: relative;
+  top: -240px;
+  
+}
