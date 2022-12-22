@@ -124,7 +124,7 @@ document.querySelector("#answers").addEventListener("click", (event) => {
         counter.innerText = `${questionCounter}`;
     } else {
         alert(score);
-        return window.location.assign("../../Results03.html");
+        return window.location.assign(`../../Results03.html?result=${score}`);
     }
     return score;
 });
