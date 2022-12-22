@@ -1,30 +1,25 @@
 // devo inserire url
-let url= window.location.search
-
+let url = window.location.search;
 
 // creo con urlsearch per il collegamento url del risultato del quiz
-const parametro= new URLSearchParams (url)
-
-
+const parametro = new URLSearchParams(url);
 
 // mi prendo dall'url il vaore result
-const score= parametro.get("result")
+const score = parametro.get("result");
 
-
-
-window.onload = function() {};
+window.onload = function () {};
 
 let numeroSuccessi = score;
 
 let numeroTotale = 10;
 
 document.getElementById(
-    "numAnswersCorrect"
+  "numAnswersCorrect"
 ).innerHTML = `<p>${numeroSuccessi}/${numeroTotale} questions</p>`;
 
 let numeroFallimenti = numeroTotale - numeroSuccessi;
 document.getElementById(
-    "numAnswersWrong"
+  "numAnswersWrong"
 ).innerHTML = `<p>${numeroFallimenti}/${numeroTotale} questions</p>`;
 
 let percentualeSuccesso = (numeroSuccessi / numeroTotale) * 100;
@@ -33,15 +28,17 @@ document.getElementById("success-rate").innerHTML = percentualeSuccesso + "%";
 let percentualeFallimento = 100 - percentualeSuccesso;
 document.getElementById("failure-rate").innerHTML = percentualeFallimento + "%";
 
-window.onload = function() {};
+window.onload = function () {};
 
 var data = {
-    datasets: [{
-        data: [percentualeFallimento, percentualeSuccesso],
-        backgroundColor: ["#c2128d", "#00ffff"],
-        borderColor: ["#c2128d", "#00ffff"],
-        borderWidth: 1,
-    }, ],
+  datasets: [
+    {
+      data: [percentualeFallimento, percentualeSuccesso],
+      backgroundColor: ["#c2128d", "#00ffff"],
+      borderColor: ["#c2128d", "#00ffff"],
+      borderWidth: 1,
+    },
+  ],
 };
 
 var ctx = document.getElementById("pieChart").getContext("2d");
@@ -50,12 +47,29 @@ ctx.canvas.height = 250;
 ctx.canvas.border = 1;
 
 var pieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: data,
-    options: {
-        responsive: true,
-        cutoutPercentage: 75,
-        maintainAspectRatio: false,
-    },
+  type: "doughnut",
+  data: data,
+  options: {
+    responsive: true,
+    cutoutPercentage: 75,
+    maintainAspectRatio: false,
+  },
 });
 
+window.onload = function () {};
+
+if (numeroSuccessi > 5) {
+  document.getElementById(
+    "inside_canvas"
+  ).innerHTML = `<p class="p1">Congratulations!</p>
+    <p class="p2">You passed the exam.</p>
+    <p class="p3">We'll send you the certificate in few minutes. Check your email (including promotions / spam folder)</p>`;
+}
+
+else{
+    document.getElementById(
+      "inside_canvas"
+    ).innerHTML = `<p class="p1">We are sorry!</p>
+      <p class="p2">You didn't passed the exam.</p>
+      <p class="p3">We'll send you the certificate of death in few minutes. Check your heaven mail (including promotions / spam folder)</p>`;
+  }
