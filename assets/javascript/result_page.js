@@ -64,12 +64,10 @@ if (numeroSuccessi > 5) {
   ).innerHTML = `<p class="p1">Congratulations!</p>
     <p class="p2">You passed the exam.</p>
     <p class="p3">We'll send you the certificate in few minutes. Check your email (including promotions / spam folder)</p>`;
-}
-
-else{
-    document.getElementById(
-      "inside_canvas"
-    ).innerHTML = `<p class="p1">We are sorry!</p>
+} else {
+  document.getElementById(
+    "inside_canvas"
+  ).innerHTML = `<p class="p1">We are sorry!</p>
       <p class="p2">You didn't passed the exam.</p>
       <p class="p3">We'll send you the certificate of death in few minutes. Check your heaven mail (including promotions / spam folder)</p>`;
-  }
+}
