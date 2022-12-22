@@ -116,11 +116,18 @@ input[type="checkbox"]:checked + label:before {
 }
 /*timer*/
 #remaining{
-
+  position: relative;
+  top: -50px;
+  left: 18px;
+  font-size: 12px;
+ 
 }
 
 #seconds{
-  
+  position: relative;
+  top: -75px;
+  left: 22px;
+  font-size: 12px;
 }
 
 
