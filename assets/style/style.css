@@ -1,329 +1,344 @@
 body {
-    font-family: "Inter", sans-serif;
-    background-image: url(../img/bg.jpg);
-    height: 100vh;
-    /* settare altezza*/
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
+  font-family: "Inter", sans-serif;
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  /* settare altezza*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 h2 {
-    font-size: 22px;
-    color: #c2128d;
-    font-weight: bolder;
-    padding-bottom: 2%;
+  font-size: 22px;
+  color: #c2128d;
+  font-weight: bolder;
+  padding-bottom: 2%;
 }
 
 #logo {
-    height: 5vh;
-    padding-bottom: 3%;
-    padding-left: 8%;
-    padding-top: 3%;
+  height: 5vh;
+  padding-bottom: 3%;
+  padding-left: 8%;
+  padding-top: 3%;
 }
 
 #title {
-    font-family: "Outfit", sans-serif;
-    font-size: 60px;
-    width: 30%;
-    line-height: 0.8em;
-    padding-bottom: 3%;
-    padding-left: 8%;
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  width: 30%;
+  line-height: 0.8em;
+  padding-bottom: 3%;
+  padding-left: 8%;
 }
 
 #content {
-    width: 50%;
-    padding-bottom: 4%;
-    line-height: 1.2em;
-    padding-left: 8%;
+  width: 50%;
+  padding-bottom: 4%;
+  line-height: 1.2em;
+  padding-left: 8%;
 }
 
 .bold {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 #list {
-    padding-left: 10%;
-    line-height: 1.5em;
-    padding-bottom: 5%;
+  padding-left: 10%;
+  line-height: 1.5em;
+  padding-bottom: 5%;
 }
-
 
 /*Verificare check-box*/
 
 #footer-welcome {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 12%;
-    padding-left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12%;
+  padding-left: 6%;
 }
 
 #proceed {
-    -webkit-box-shadow: 5px 0px 28px 1px #00ffff;
-    -moz-box-shadow: 5px 0px 28px 1px #00ffff;
-    -o-box-shadow: 5px 0px 28px 1px #00ffff;
-    box-shadow: 5px 0px 28px 1px #00ffff;
+  -webkit-box-shadow: 5px 0px 28px 1px #00ffff;
+  -moz-box-shadow: 5px 0px 28px 1px #00ffff;
+  -o-box-shadow: 5px 0px 28px 1px #00ffff;
+  box-shadow: 5px 0px 28px 1px #00ffff;
 }
 
 label {
-    font-weight: bold;
-    padding-left: 2%;
-    width: 100%;
+  font-weight: bold;
+  padding-left: 2%;
+  width: 100%;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
-input[type="checkbox"]+label {
-    display: block;
-    margin: 0.2em;
+input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
 }
 
-input[type="checkbox"]+label:before {
-    content: "\2714";
-    border: 0.2em solid white;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    padding: 0.2em;
-    margin: 0.2em;
-    vertical-align: center;
-    color: transparent;
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 0.2em solid white;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding: 0.2em;
+  margin: 0.2em;
+  vertical-align: center;
+  color: transparent;
 }
 
-input[type="checkbox"]:checked+label:before {
-    color: white;
+input[type="checkbox"]:checked + label:before {
+  color: white;
 }
 
 #button {
-    height: 40px;
-    font-size: 1em;
-    color: #0b113b;
-    font-weight: bold;
-    border: 1px;
-    padding: 10px 40px;
-    background-color: #00ffff;
+  height: 40px;
+  font-size: 1em;
+  color: #0b113b;
+  font-weight: bold;
+  border: 1px;
+  padding: 10px 40px;
+  background-color: #00ffff;
 }
-
 
 /* CSS PAGINA 2 (Question Page)*/
 
 #questionHeader {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 8%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8%;
 }
 
 #time {
-    padding-top: 3%;
+  padding-top: 3%;
 }
 
 #quiz {
-    text-align: center;
+  text-align: center;
 }
 
 #question {
-    padding-bottom: 8%;
-    font-family: "Outfit", sans-serif;
-    font-size: 60px;
-    padding-left: 8%;
-    padding-right: 8%;
+  padding-bottom: 8%;
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 #choices-box {
-    padding-left: 2%;
-    padding-right: 4%;
-    padding-bottom: 2%;
-    width: 50%;
-    text-align: center;
-    padding-left: 25%;
+  padding-left: 2%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+  width: 50%;
+  text-align: center;
+  padding-left: 25%;
 }
 
 .choice {
-    height: 50px;
-    width: 200px;
-    font-size: 1em;
-    color: white;
-    font-weight: bold;
-    border: 2px solid rgba(255, 255, 255, 0.164);
-    border-radius: 50px;
-    padding: 10px 40px;
-    background-color: #ffffff22;
-    box-shadow: -1px -1px 0px 1px white;
-    width: 40vh;
-    margin-left: 5%;
-    vertical-align: baseline-middle;
-    margin-bottom: 2%;
+  height: 50px;
+  width: 200px;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.164);
+  border-radius: 50px;
+  padding: 10px 40px;
+  background-color: #ffffff22;
+  box-shadow: -1px -1px 0px 1px white;
+  width: 40vh;
+  margin-left: 5%;
+  vertical-align: baseline-middle;
+  margin-bottom: 2%;
 }
 
 .choice:hover {
-    cursor: pointer;
-    background: linear-gradient( 180deg, rgb(206, 6, 183) 0%, 35%, rgb(135, 2, 115) 100%);
-    transform: scale(1.02);
-    transform: transform 100ms;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgb(206, 6, 183) 0%,
+    35%,
+    rgb(135, 2, 115) 100%
+  );
+  transform: scale(1.02);
+  transform: transform 100ms;
 }
 
 #footer-quiz {
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 14px;
-    padding-bottom: 4%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 4%;
 }
 
 #pink {
-    color: #c2128d;
+  color: #c2128d;
 }
-
 
 /******style.css/results*************/
 
 #imgResults {
-    width: 100%;
-    max-width: 12%;
-    padding-top: 2em;
-    padding-left: 7em;
+  width: 100%;
+  max-width: 12%;
+  padding-top: 2em;
+  padding-left: 7em;
 }
 
 #mainResults {
-    height: 55vh;
-    text-align: center;
+  height: 55vh;
+  text-align: center;
 }
 
 #divHeader p {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .h1 {
-    font-size: 3em;
-    font-weight: bolder;
+  font-size: 3em;
+  font-weight: bolder;
 }
 
 #footerResults {
-    text-align: center;
+  text-align: center;
 }
 
 #mainResults h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #leftDiv {
-    display: inline-block;
-    width: 10em;
-    text-align: left;
-    padding-top: 9em;
-    padding-right: 10em;
+  display: inline-block;
+  width: 10em;
+  text-align: left;
+  padding-top: 9em;
+  padding-right: 10em;
 }
 
-.percentage1 {
-    font-weight: bold;
+/* #success-number {
+  font-weight: bold;
+  color: #c2128d;
 }
 
-.percentage2 {
-    font-weight: bold;
+#failure-number {
+  color: beige;
 }
+
+#total-number {
+  font-weight: bold;
+  color: blue;
+}
+
+#success-rate {
+  font-weight: bold;
+}
+
+#failure-rate {
+  font-weight: bold;
+} */
 
 #centralDiv {
-    display: inline-block;
+  display: inline-block;
 }
 
 #rightDiv {
-    display: inline-block;
-    padding-left: 10em;
+  display: inline-block;
+  padding-left: 10em;
 }
 
 .firstP {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .secondP {
-    font-size: 20px;
+  font-size: 20px;
+  color: aqua;
 }
 
 #rightDiv {
-    display: inline-block;
-    width: 10em;
-    text-align: right;
+  display: inline-block;
+  width: 10em;
+  text-align: right;
 }
 
 #footerResults {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 
 #anchorFooter {
-    border: 2px solid white;
-    color: white;
-    font-size: 2em;
-    padding: 0.2em 2em;
-    text-decoration: none;
-    font-weight: bold;
+  border: 2px solid white;
+  color: white;
+  font-size: 2em;
+  padding: 0.2em 2em;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 
 /*CSS PAGINA 4 (Review Page)*/
 
 #conteiner.commit {
-    display: flex;
-    padding-top: 2%;
+  display: flex;
+  padding-top: 2%;
 }
 
 .mainReg02 {
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 #comment {
-    border-bottom: 1px solid #d0408db3;
-    border-top: #ffffff01;
-    border-left: #ffffff01;
-    border-right: #ffffff01;
-    width: 60%;
-    color: #000000;
-    background-color: #ffffff01;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  border-bottom: 1px solid #d0408db3;
+  border-top: #ffffff01;
+  border-left: #ffffff01;
+  border-right: #ffffff01;
+  width: 60%;
+  color: #000000;
+  background-color: #ffffff01;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .pReview {
-    font-size: 22px;
-    padding-bottom: 3%;
-    padding-top: 3%;
+  font-size: 22px;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 #title2 {
-    font-size: 40px;
-    padding-bottom: 20px;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 
 #footer-review {
-    display: flex;
-    justify-content: center;
-    padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
 }
 
 .star {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .star.selected {
-    content: url("../img/star.svg");
+  content: url("../img/star.svg");
 }
 
 #rating {
-    padding: 2%;
+  padding: 2%;
 }
-
 
 /*CSS doughnut chart */
 
 #inside_canvas {
-    position: relative;
-    top: -190px;
+  position: relative;
+  top: -190px;
 }
