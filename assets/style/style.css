@@ -10,7 +10,7 @@ body {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 35px;
   color: #c2128d;
   font-weight: bolder;
   padding-bottom: 2%;
@@ -25,9 +25,10 @@ h2 {
 
 #title {
   font-family: "Outfit", sans-serif;
-  font-size: 60px;
+  font-size: 80px;
   width: 30%;
   line-height: 0.8em;
+  padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 8%;
 }
@@ -35,6 +36,7 @@ h2 {
 #content {
   width: 50%;
   padding-bottom: 4%;
+  padding-left: 1%;
   line-height: 1.2em;
   padding-left: 8%;
 }
@@ -46,7 +48,7 @@ h2 {
 #list {
   padding-left: 10%;
   line-height: 1.5em;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
 }
 
 /*Verificare check-box*/
@@ -56,7 +58,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding-right: 12%;
-  padding-left: 6%;
+  padding-left: 6.5%;
 }
 
 #proceed {
@@ -115,23 +117,21 @@ input[type="checkbox"]:checked + label:before {
   padding-right: 8%;
 }
 /*timer*/
-#remaining{
+#remaining {
   position: relative;
   top: -50px;
   left: 18px;
   font-size: 12px;
- 
 }
 
-#seconds{
+#seconds {
   position: relative;
   top: -75px;
   left: 22px;
   font-size: 12px;
 }
 
-
-#app{
+#app {
   margin-top: 60px;
 }
 .base-timer {
@@ -189,6 +189,7 @@ input[type="checkbox"]:checked + label:before {
 
 #quiz {
   text-align: center;
+  margin-top: 5em;
 }
 
 #question {
@@ -346,7 +347,7 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 1.5%;
+  padding-top: 5%;
 }
 
 #comment {
@@ -354,7 +355,7 @@ input[type="checkbox"]:checked + label:before {
   border-top: #ffffff01;
   border-left: #ffffff01;
   border-right: #ffffff01;
-  width: 60%;
+  width: 50em;
   color: #000000;
   background-color: #ffffff01;
   margin-top: 20px;
@@ -363,10 +364,12 @@ input[type="checkbox"]:checked + label:before {
 
 .pReview {
   font-size: 22px;
+  width: 25em;
+  margin-left: 22em;
 }
 
 #title2 {
-  font-size: 40px;
+  font-size: 60px;
   padding-bottom: 20px;
 }
 
