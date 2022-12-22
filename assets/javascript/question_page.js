@@ -204,15 +204,11 @@ const questions = [
     category: "Science: Computers",
     type: "multiple",
     difficulty: "easy",
-    question: "What does CPU stand for?",
-    correct_answer: "Central Processing Unit",
-    incorrect_answers: [
-      "Central Process Unit",
-      "Computer Personal Unit",
-      "Central Processor Unit",
-    ],
+    question:
+      "Which programming language shares its name with an island in Indonesia?",
+    correct_answer: "Java",
+    incorrect_answers: ["Python", "C", "Jakarta"],
   },
-  // altre domande...
 ];
 
 let currentQuestion = 0;
@@ -234,19 +230,27 @@ function showQuestion() {
   }
   answersHTML += `<button class="choice">${question.correct_answer}</button>`;
   document.querySelector("#answers").innerHTML = answersHTML;
-
-  // imposta un timer per passare alla domanda successiva dopo 20 secondi
-  setTimeout(function () {
-    // passa alla domanda successiva
-    currentQuestion++;
-    questionCounter++;
-    showQuestion();
-  }, 20000);
 }
+document.querySelector("#answers").addEventListener("click", (event) => {
+  // verifica se l'utente ha selezionato la risposta corretta
+  if (event.target.innerHTML === questions[currentQuestion].correct_answer) {
+    score += 1;
+  }
 
-document.querySelector("#answers").addEventListener("click", function (event) {
-  // gestisci il click su una risposta
+  // passa alla domanda successiva
+  currentQuestion++;
+
+  if (currentQuestion < questions.length) {
+    showQuestion();
+    questionCounter++;
+    counter.innerText = `${questionCounter}`;
+  } else {
+    return window.location.assign(`../../Results03.html?result=${score}`);
+  }
+  return score;
 });
 
 // mostra la prima domanda
 showQuestion();
+
+//
