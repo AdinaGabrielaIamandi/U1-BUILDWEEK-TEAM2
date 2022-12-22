@@ -113,9 +113,6 @@ document.querySelector("#answers").addEventListener("click", (event) => {
     // verifica se l'utente ha selezionato la risposta corretta
     if (event.target.innerHTML === questions[currentQuestion].correct_answer) {
         score += 1;
-        alert(score);
-    } else {
-        alert(score);
     }
 
     // passa alla domanda successiva
@@ -126,8 +123,10 @@ document.querySelector("#answers").addEventListener("click", (event) => {
         questionCounter++;
         counter.innerText = `${questionCounter}`;
     } else {
+        alert(score);
         return window.location.assign("../../Results03.html");
     }
+    return score;
 });
 
 // mostra la prima domanda
