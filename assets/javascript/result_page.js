@@ -1,6 +1,20 @@
+// devo inserire url
+let url= window.location.search
+
+
+// creo con urlsearch per il collegamento url del risultato del quiz
+const parametro= new URLSearchParams (url)
+
+
+
+// mi prendo dall'url il vaore result
+const score= parametro.get("result")
+
+
+
 window.onload = function() {};
 
-let numeroSuccessi = 1;
+let numeroSuccessi = score;
 
 let numeroTotale = 10;
 
@@ -45,47 +59,3 @@ var pieChart = new Chart(ctx, {
     },
 });
 
-
-// collegare risultato alla pagina
-
-
-
-
-
-
-
-// devo inserire url
-let url= window.location.search
-console.log(url)
-
-
-const parametro= new URLSearchParams (url)
-
-
-console.log(parametro.get("result"))
-const score= parametro.get("result")
-
-
-document.querySelector("").innerHTML=`<p class="firstP">Wrong <span class="percentage2"> ${score} </span> </p>`
-
-//
-//let params = new URLSearchParams(url.search);
-//console.log(params)
-// tra parentesi mi dice querystring vado ad inserire il valore da cercare
-/*
-//score is not definito
-var urlParams = new URLSearchParams("score");
-
-console.log(urlParams)
-
-let prendiScore = urlParams.get('let score= 0')
-console.log(prendiScore);
-//mi esce null
-
-//Come controlliamo se nella query è presente un parametro? Utilizziamo URLSearchParams.has() che ci restituirà true oppure false:
-console.log(prendiScore.has('let score= 0'))
-
-
-
-document.querySelector(".percentage1").innerHTML=` <p class="firstP">Wrong <span class="percentage2"> ${score}  </span></p>`
-*/
