@@ -132,3 +132,5 @@ document.querySelector("#answers").addEventListener("click", (event) => {
 
 // mostra la prima domanda
 showQuestion();
+
+//
