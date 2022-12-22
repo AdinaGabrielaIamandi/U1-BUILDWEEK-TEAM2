@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,39 +11,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <title>Quiz</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header id="questionHeader">
-      <img id="logo" src="./assets/img/epicode_logo.png" />
-      <div id="app"></div>
-      <!--da capire come implementare il timer-->
+        <img id="logo" src="./assets/img/epicode_logo.png" />
+        <div id="app"></div>
+        <!--da capire come implementare il timer-->
     </header>
     <div id="quiz">
-      <h1 id="question"></h1>
-      <div id="choices-box">
-        <div id="answers"></div>
-      </div>
+        <h1 id="question"></h1>
+        <div id="choices-box">
+            <div id="answers"></div>
+        </div>
     </div>
     <footer id="footer-quiz">
-      <div class="hud-item">
-        <p id="progressText" class="hud-prefix">
-          QUESTION <span id="counter"> </span> <span id="pink">/10</span>
-        </p>
-      </div>
+        <div class="hud-item">
+            <p id="progressText" class="hud-prefix">
+                QUESTION <span id="counter"> </span> <span id="pink">/10</span>
+            </p>
+        </div>
     </footer>
-  </body>
-  <script src="./assets/javascript/timer.js"></script>
+</body>
+<script src="./assets/javascript/question_page.js"></script>
 
-  <script src="./assets/javascript/question_page.js"></script>
 </html>
