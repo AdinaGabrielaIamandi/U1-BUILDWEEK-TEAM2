@@ -31,6 +31,19 @@ document.getElementById("failure-rate").innerHTML = percentualeFallimento + "%";
 window.onload = function () {};
 
 var data = {
+  labels: ["Correct", "Wrong"],
+  datasets: [
+    {
+      data: [percentualeFallimento, percentualeSuccesso],
+      backgroundColor: ["#c2128d", "#00ffff"],
+      borderColor: ["#c2128d", "#00ffff"],
+      borderWidth: 1,
+    },
+  ],
+};
+
+var data = {
+  labels: ["Wrong", "Correct"],
   datasets: [
     {
       data: [percentualeFallimento, percentualeSuccesso],
@@ -50,9 +63,21 @@ var pieChart = new Chart(ctx, {
   type: "doughnut",
   data: data,
   options: {
-    responsive: true,
-    cutoutPercentage: 75,
+    responsive: false,
+    cutoutPercentage: 72,
     maintainAspectRatio: false,
+    tooltips: {
+      callbacks: {
+        label: function (tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var index = tooltipItem.index;
+          return data.labels[index] + ": " + dataset.data[index] + "%";
+        },
+      },
+    },
+    legend: {
+      display: false, // hide the legend
+    },
   },
 });
 
