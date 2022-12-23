@@ -108,6 +108,7 @@ input[type="checkbox"]:checked+label:before {
     border: 1px;
     padding: 10px 40px;
     background-color: #00ffff;
+    cursor: pointer;
 }
 
 
@@ -366,10 +367,8 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .mainReg02 {
+    padding: 3%;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
 }
 
 #comment {
@@ -386,8 +385,7 @@ input[type="checkbox"]:checked+label:before {
 
 .pReview {
     font-size: 22px;
-    width: 25em;
-    margin-left: 22em;
+    text-align: center;
 }
 
 #title2 {
@@ -398,13 +396,14 @@ input[type="checkbox"]:checked+label:before {
 #footer-review {
     display: flex;
     justify-content: center;
-    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 .star {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    padding-left: 0.8%;
 }
 
 .star.selected {
