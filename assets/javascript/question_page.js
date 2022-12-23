@@ -53,6 +53,7 @@ function resetTimer() {
     timeLeft = TIME_LIMIT;
     timePassed = 0;
     clearInterval(timerInterval);
+    currentQuestion++; // incrementa la domanda corrente
     startTimer();
 }
 
@@ -66,7 +67,7 @@ function startTimer() {
         setRemainingPathColor(timeLeft);
 
         if (timeLeft === 0) {
-            showQuestion();
+            showQuestion(currentQuestion); // mostra la domanda corrente
         }
     }, 1000);
 }
@@ -79,7 +80,7 @@ function formatTime(time) {
         seconds = `0${seconds}`;
     }
 
-    return `${minutes}:${seconds}`;
+    return `${seconds}`;
 }
 
 function setRemainingPathColor(timeLeft) {
@@ -213,6 +214,7 @@ let questionCounter = 1;
 let score = 0;
 
 function showQuestion() {
+    resetTimer();
     counter.innerText = `${questionCounter}`;
     // recupera la domanda corrente
     const question = questions[currentQuestion];
@@ -236,7 +238,6 @@ document.querySelector("#answers").addEventListener("click", (event) => {
 
     // passa alla domanda successiva
     currentQuestion++;
-
     if (currentQuestion < questions.length || timeLeft === 0) {
         showQuestion();
         questionCounter++;
@@ -244,7 +245,7 @@ document.querySelector("#answers").addEventListener("click", (event) => {
     } else {
         return window.location.assign(`../../Results03.html?result=${score}`);
     }
-    resetTimer();
+
     return score;
 });
 
