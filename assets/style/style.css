@@ -107,6 +107,7 @@ input[type="checkbox"]:checked + label:before {
   border: 1px;
   padding: 10px 40px;
   background-color: #00ffff;
+  cursor: pointer;
 }
 
 /* CSS PAGINA 2 (Question Page)*/
@@ -368,6 +369,7 @@ input[type="checkbox"]:checked + label:before {
 #footer-review {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .star {
