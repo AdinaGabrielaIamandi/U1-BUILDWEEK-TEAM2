@@ -372,6 +372,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .star {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
   width: 40px;
   height: 40px;
   cursor: pointer;
