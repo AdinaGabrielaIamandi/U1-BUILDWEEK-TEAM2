@@ -168,14 +168,6 @@ input[type="checkbox"]:checked + label:before {
   color: #00ffff;
 }
 
-.base-timer__path-remaining.orange {
-  color: orange;
-}
-
-.base-timer__path-remaining.red {
-  color: red;
-}
-
 .base-timer__label {
   position: absolute;
   width: 100px;
