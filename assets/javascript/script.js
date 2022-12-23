@@ -27,6 +27,6 @@ document
   .getElementById("comment")
   .addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      alert(this.value);
+      alert("Thanks for your feedback");
     }
   });
