@@ -214,7 +214,6 @@ let questionCounter = 1;
 let score = 0;
 
 function showQuestion() {
-    resetTimer();
     counter.innerText = `${questionCounter}`;
     // recupera la domanda corrente
     const question = questions[currentQuestion];
@@ -229,7 +228,23 @@ function showQuestion() {
     }
     answersHTML += `<button class="choice">${question.correct_answer}</button>`;
     document.querySelector("#answers").innerHTML = answersHTML;
+
+    // imposta il timer di 20 secondi
+    timer = setTimeout(() => {
+        // passa alla domanda successiva
+        currentQuestion++;
+
+        if (currentQuestion < questions.length) {
+            showQuestion();
+            questionCounter++;
+            counter.innerText = `${questionCounter}`;
+        } else {
+            return window.location.assign(`../../Results03.html?result=${score}`);
+        }
+    }, 20000);
+    resetTimer();
 }
+
 document.querySelector("#answers").addEventListener("click", (event) => {
     // verifica se l'utente ha selezionato la risposta corretta
     if (event.target.innerHTML === questions[currentQuestion].correct_answer) {
@@ -238,18 +253,19 @@ document.querySelector("#answers").addEventListener("click", (event) => {
 
     // passa alla domanda successiva
     currentQuestion++;
-    if (currentQuestion < questions.length || timeLeft === 0) {
+
+    // cancella il timer quando l'utente seleziona una risposta
+    clearTimeout(timer);
+
+    if (currentQuestion < questions.length) {
         showQuestion();
         questionCounter++;
         counter.innerText = `${questionCounter}`;
     } else {
         return window.location.assign(`../../Results03.html?result=${score}`);
     }
-
     return score;
 });
 
 // mostra la prima domanda
 showQuestion();
-
-//
