@@ -368,7 +368,6 @@ input[type="checkbox"]:checked + label:before {
 #footer-review {
   display: flex;
   justify-content: center;
-  padding-top: 3%;
 }
 
 .star {
